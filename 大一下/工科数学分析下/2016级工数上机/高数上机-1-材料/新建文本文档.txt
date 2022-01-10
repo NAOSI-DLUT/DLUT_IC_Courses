@@ -1,0 +1,76 @@
+x=input('x=')
+if x<0
+y=x^3
+else
+y=5*x^2
+end
+x,y
+
+
+
+
+
+
+n=input('n=')
+sum=0;k=1;
+while k<=n
+sum=sum+k;
+k=k+1;
+end
+sum
+
+
+
+
+x=0:0.1:4*pi;
+y1=0.2*exp(0.1*x).*sin(0.5*x);
+y2=0.2*exp(0.1*x).*cos(0.5*x);
+plot(x,y1)
+hold on
+plot(x,y2)
+
+
+
+
+syms t 
+ezplot(sin(3*t)*cos(t),sin(3*t)*sin(t),[0,pi])
+
+
+
+
+
+x=-1:0.1:1;
+for k=1:4
+y=x.^k;
+plot(x,y,'r')
+hold on
+end
+hold off
+
+
+
+
+
+x=-5:0.5:5;
+y=x;
+[x,y]=meshgrid(x,y); 
+z=x.^2+y.^2;
+subplot(2,2,1) 
+mesh(x,y,z);
+subplot(2,2,2) 
+meshc(x,y,z); 
+subplot(2,2,3) 
+surf(x,y,z);
+subplot(2,2,4) 
+surfc(x,y,z); 
+
+
+
+
+
+
+
+
+
+
+
