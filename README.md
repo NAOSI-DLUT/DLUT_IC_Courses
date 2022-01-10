@@ -1,7 +1,7 @@
 # DLUT_ME_Courses
 # 大连理工大学微电子专业课程指南
 
-对于其他文件请关注[主REPO](https://github.com/NAOSI-DLUT/DLUT_SE_Courses)
+对于其他文件可以关注[软院的课程REPO](https://github.com/NAOSI-DLUT/DLUT_SE_Courses)
 
 #### 欢迎贡献！！ 欢迎贡献！！ 欢迎贡献！！
 
@@ -31,9 +31,9 @@
 
 机缘巧合下了解到隔壁软院有一个能够提供课程资料帮助的repo，于是笔者本着开发区就近互助的想法，决定依托NAOSI建立面向微电子学院的课程资料共享平台
 
-如果有可能的话，还希望能够借助这个项目让更多微电子的同学从使用Github开始了解科创
+如果有可能的话，还希望能够借助这个项目让更多微电子的同学从使用Github开始了解科创——硅农也是新时代农民工，所以用GitHub也是蛮正常的（笑）
 
-硅农也是新时代农民工，所以用GitHub也是蛮正常的（笑）
+学习资料的重复总结-存储-遗忘过程是很低效的，学长学姐费尽心思总结的材料就应该传承下去供学弟学妹使用，学弟学妹在这些成熟资料基础上继续积累新的、更高效的资料，这样才能实现知识的滚动增长，而不是一届又一届的推倒重来。希望本项目及其衍生出的学习资料积累能让每届学弟学妹都能够学习到比学长学姐更多更深入的知识。
 
 ## 上传及阅读指南1
 
@@ -67,9 +67,9 @@ Github是一个用于存储开源项目的网站，里面每个项目都会依�
 
 Git是一个命令行工具，但是我们在使用Github时不需要敲命令，只需要像使用百度网盘那样即可
 
-1. 首先需要声明：Github的服务器在国外，经常会出现进不去的情况，所以我们正准备在一个中国的开源项目托管网站**Gitee**上对这个项目做一个镜像，如果你遇到无法进入Github的情况，可以转到Gitee按照相同步骤进行操作
+1. 首先需要声明：Github的服务器在国外，经常会出现进不去的情况，所以我们*正准备*（Gitee不支持免费存储大文件是个困难情况）在一个中国的开源项目托管网站**Gitee**上对这个项目做一个镜像，如果您遇到无法进入Github的情况，可以考虑转到Gitee按照相同步骤进行操作
 
-2. 你需要注册一个Github账号，流程和注册百度网盘一样，邮箱+密码
+2. 您需要注册一个Github账号，流程和注册百度网盘一样，邮箱+密码
 
 3. 从[官网](https://git-scm.com/downloads)下载Git软件，并按照安装程序的指示安装Git，一定注意**在安装过程中勾选里面的“将Git添加到Path”**
 
@@ -77,31 +77,63 @@ Git是一个命令行工具，但是我们在使用Github时不需要敲命令�
 
     可以参考在下面列出的其他教程对Git软件进行进一步配置
 
-4. 随后，你需要点击右上角的Code来下载这个项目
+4. 登录自己的Github账号，在本项目内点击右上角的fork来复制一份，并在自己的仓库内打开
+
+    ![image-20220110175218407](README.assets/image-20220110175218407.png)
+
+5. 随后，您需要点击右上角的Code来下载这个项目
 
     ![image-20220110162721307](README.assets/image-20220110162721307.png)
 
     复制HTTPS选项下面的链接，切换到任意文件夹下鼠标右键打开Git命令行，输入下面的命令
 
     ```shell
-    git clone https://github.com/NAOSI-DLUT/DLUT_ME_Courses.git
+    git clone https://github.com/<这里应该是你的Github账号>/DLUT_ME_Courses.git
     ```
 
-    如果你在此之前已经按照其他教程配置好了Github的SSH，可以使用SSH选项下面的链接，输入命令
+    如果您在此之前已经按照其他教程配置好了Github的SSH，可以使用SSH选项下面的链接，输入命令
 
     ```shell
-    git clone git@github.com:NAOSI-DLUT/DLUT_ME_Courses.git
+    git clone git@github.com:<这里应该是你的Github账号>/DLUT_ME_Courses.git
     ```
 
     一般来说Github使用SSH比HTTPS下载更快一些
 
-5. 
+6. 直接在项目文件夹内修改，注意**不要加入大于100MB的单个文件**，否则会无法提交
+
+7. 使用以下指令将本地修改同步到Github的仓库
+
+    ```shell
+    git add .
+    git commit -m "这里简述做了什么修改"
+    git push origin
+    ```
+
+    如果报错可以检查一下有没有添加大于100MB的单个文件，或者自己的Github仓库（<Github用户名>/DLUT_ME_Courses）有没有完成更新
+
+8. 等待完成push后进入Github的仓库，点击`pull requests`-`new pull request`
+
+    ![image-20220110175735674](README.assets/image-20220110175735674.png)
+
+    ![image-20220110175753278](README.assets/image-20220110175753278.png)
+
+    随后会进入代码比较界面，可以将自己添加的文件和主目录进行比较
+
+    注意一定不要选错左侧的分支
+
+9. 等待主分支的管理人员审核完毕，您的提交就会被加入主分支啦
 
 > 更多资料可参考
 >
 > https://blog.csdn.net/qq_41782425/article/details/85183250
 >
 > https://www.cnblogs.com/ttjsndx/p/7943444.html
+>
+> https://blog.csdn.net/weixin_41697143/article/details/81837369
+>
+> https://www.jianshu.com/p/458127e40f30
+
+如果有不清楚的地方，也欢迎加入NAOSI的交流群提问！
 
 ## 参与我们的项目
 
