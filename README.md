@@ -68,8 +68,40 @@ Github是一个用于存储开源项目的网站，里面每个项目都会依�
 Git是一个命令行工具，但是我们在使用Github时不需要敲命令，只需要像使用百度网盘那样即可
 
 1. 首先需要声明：Github的服务器在国外，经常会出现进不去的情况，所以我们正准备在一个中国的开源项目托管网站**Gitee**上对这个项目做一个镜像，如果你遇到无法进入Github的情况，可以转到Gitee按照相同步骤进行操作
+
 2. 你需要注册一个Github账号，流程和注册百度网盘一样，邮箱+密码
-3. 随后，你需要
+
+3. 从[官网](https://git-scm.com/downloads)下载Git软件，并按照安装程序的指示安装Git，一定注意**在安装过程中勾选里面的“将Git添加到Path”**
+
+    ![image-20220110162827702](README.assets/image-20220110162827702.png)
+
+    可以参考在下面列出的其他教程对Git软件进行进一步配置
+
+4. 随后，你需要点击右上角的Code来下载这个项目
+
+    ![image-20220110162721307](README.assets/image-20220110162721307.png)
+
+    复制HTTPS选项下面的链接，切换到任意文件夹下鼠标右键打开Git命令行，输入下面的命令
+
+    ```shell
+    git clone https://github.com/NAOSI-DLUT/DLUT_ME_Courses.git
+    ```
+
+    如果你在此之前已经按照其他教程配置好了Github的SSH，可以使用SSH选项下面的链接，输入命令
+
+    ```shell
+    git clone git@github.com:NAOSI-DLUT/DLUT_ME_Courses.git
+    ```
+
+    一般来说Github使用SSH比HTTPS下载更快一些
+
+5. 
+
+> 更多资料可参考
+>
+> https://blog.csdn.net/qq_41782425/article/details/85183250
+>
+> https://www.cnblogs.com/ttjsndx/p/7943444.html
 
 ## 参与我们的项目
 
@@ -78,8 +110,6 @@ Git是一个命令行工具，但是我们在使用Github时不需要敲命令�
 如果你关于学校或者课程有很多疑问，请多向我们提 issue ，力所能及的范围我们都是会回答你的，但提问前请先参阅  [怎样提出一个好问题](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md) 十分感谢！！
 
 我们会尽可能将你们所提的issue整合成 Q&A ，并整理为一个文件，这项工作有待完善，欢迎大家参与！！ 😄
-
-##
 
 ## 许可
 
