@@ -1,5 +1,5 @@
-# DLUT_ME_Courses
-# 大连理工大学微电子专业课程指南
+# DLUT_IC_Courses
+# 大连理工大学集成电路学院本科课程指南
 
 对于其他文件可以关注[软院的课程REPO](https://github.com/NAOSI-DLUT/DLUT_SE_Courses)
 
@@ -37,7 +37,7 @@
 
 > 大工微电，芯火相传
 
-——来自DLUT_ME_Courses建立者的话
+——来自DLUT_IC_Courses建立者的话
 
 ## 上传及阅读指南1
 
