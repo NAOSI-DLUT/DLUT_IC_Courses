@@ -88,18 +88,18 @@ Git是一个命令行工具，但是我们在使用Github时不需要敲命令�
 
 5. 随后，您需要点击右上角的Code来下载这个项目
 
-    ![image-20220110162721307](README.assets/image-20220110162721307.png)
+    ![image-20220110162721307](README.assets/Snipaste_2023-11-05_19-01-59.png)
 
     复制HTTPS选项下面的链接，切换到任意文件夹下鼠标右键打开Git命令行，输入下面的命令
 
     ```shell
-    git clone https://github.com/<这里应该是你的Github账号>/DLUT_ME_Courses.git
+    git clone https://github.com/<这里应该是你的Github账号>/DLUT_IC_Courses.git
     ```
 
     如果您在此之前已经按照其他教程配置好了Github的SSH，可以使用SSH选项下面的链接，输入命令
 
     ```shell
-    git clone git@github.com:<这里应该是你的Github账号>/DLUT_ME_Courses.git
+    git clone git@github.com:<这里应该是你的Github账号>/DLUT_IC_Courses.git
     ```
 
     一般来说Github使用SSH比HTTPS下载更快一些
@@ -114,7 +114,7 @@ Git是一个命令行工具，但是我们在使用Github时不需要敲命令�
     git push origin
     ```
 
-    如果报错可以检查一下有没有添加大于100MB的单个文件，或者自己的Github仓库（<Github用户名>/DLUT_ME_Courses）有没有完成更新
+    如果报错可以检查一下有没有添加大于100MB的单个文件，或者自己的Github仓库（<Github用户名>/DLUT_IC_Courses）有没有完成更新
 
 8. 等待完成push后进入Github的仓库，点击`pull requests`-`new pull request`
 
